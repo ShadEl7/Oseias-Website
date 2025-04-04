@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title -->
+    <title>About Us - Robin's Children's Choir</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS (Using v6.5.1 like index.html) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect/Preload hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="app-container">
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header (Standard) -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3">
+                 <a href="index.html" class="brand">
+                     <img src="robin.png" alt="Robin's Children's Choir Logo" style="height: 40px;">
+                     <span>Robin's Choir</span>
+                </a>
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation (Standard - Added Portfolio) -->
+        <nav class="sidebar" id="sidebarNav">
+             <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="about.html" class="nav-link">About</a></li>
+                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                 <li><a href="support.html" class="nav-link">Support Us</a></li>
+                 <li><a href="news&events.html" class="nav-link">News & Events</a></li>
+                 <li><a href="programs.html" class="nav-link">Programs</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar Overlay (Standard) -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+            <!-- Standard Content Wrapper -->
+            <div class="content-wrapper container-xl">
+
+                <!-- Page Header Card -->
+                <section class="page-header-card text-center"> <!-- Added text-center for initial card -->
+                    <h1 class="page-title">About Robin's Children's Choir</h1>
+                    <p class="intro-text">
+                        Discover the heart and soul of our choir, where young voices come together to create harmony and joy.
+                    </p>
+                </section>
+
+                <!-- Mission Section -->
+                <section class="page-section mission-section">
+                    <div class="section-heading">
+                        <h2>Our Mission</h2>
+                    </div>
+                    <div class="card card-body shadow-sm">
+                        <p>We aim to inspire and nurture a love for music in children, fostering creativity, confidence, and community through the power of song.</p>
+                        <video controls width="100%" height="300">
+                            <source src="videos/mission.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+
+                <!-- Vision Section -->
+                <section class="page-section vision-section">
+                    <div class="section-heading">
+                        <h2>Our Vision</h2>
+                    </div>
+                    <div class="card card-body shadow-sm">
+                        <p>Our vision is to create a world where every child has the opportunity to express themselves through music, building a foundation for lifelong appreciation and artistic growth.</p>
+                        <video controls width="100%" height="300">
+                            <source src="videos/vision.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+
+                <!-- Our Values Section -->
+                <section class="page-section values-section">
+                    <div class="section-heading">
+                        <h2>Our Values</h2>
+                    </div>
+                    <div class="card card-body shadow-sm">
+                        <p>We believe in inclusivity, creativity, and the transformative power of music to bring people together and inspire positive change.</p>
+                        <video controls width="100%" height="300">
+                            <source src="videos/values.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </section>
+
+                <!-- Our Team Section -->
+                <section class="page-section team-section">
+                    <div class="section-heading">
+                        <h2>Our Team</h2>
+                    </div>
+                    <div class="card card-body shadow-sm">
+                        <p>Meet the passionate individuals who make Robin's Children's Choir a success. Our team includes music educators, conductors, and volunteers dedicated to nurturing young talent.</p>
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <img src="images/team1.jpg" alt="Team Member 1" class="img-fluid rounded shadow-sm" style="width: 100%; height: 300px; object-fit: cover;">
+                                <p class="mt-2"><strong>Oseias Bonzali (Robin)</strong><br>CEO</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/team2.jpg" alt="Team Member 2" class="img-fluid rounded shadow-sm" style="width: 100%; height: 300px; object-fit: cover;">
+                                <p class="mt-2"><strong>Jane Smith</strong><br>Choir Conductor</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/team3.jpg" alt="Team Member 3" class="img-fluid rounded shadow-sm" style="width: 100%; height: 300px; object-fit: cover;">
+                                <p class="mt-2"><strong>Emily Johnson</strong><br>Volunteer Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Message from the Team Leader Section -->
+                <section class="page-section leader-message-section">
+                    <div class="section-heading">
+                        <h2>Message from the CEO</h2>
+                    </div>
+                    <div class="card card-body shadow-sm">
+                        <p>Dear Parents and Students,</p>
+                        <p>We are thrilled to embark on another incredible year of music, harmony, and unforgettable performances with our choir in 2025. This year promises to be filled with enriching experiences, outstanding performances, and the joy of music that unites us all. We encourage all students and parents to stay engaged and committed to rehearsals as we prepare for these exciting events. Your support and dedication play a crucial role in making each performance a success!</p>
+                        <p>Thank you for being a part of this wonderful musical journey. We look forward to a harmonious and inspiring year ahead.</p>
+                        <p>Warm regards,</p>
+                        <p><strong>Robin</strong><br>Team Leader, Robin's Children's Choir</p>
+                    </div>
+                </section>
+
+                <!-- Call to Action Section (Standard) -->
+                <section class="page-section cta-section-wrapper">
+                    <div class="cta-section">
+                        <h3>Join Our Choir</h3>
+                        <p>Are you ready to let your child's voice shine? Join us and be part of a community that celebrates music and friendship.</p>
+                        <a href="signup.html" class="cta-btn">Sign Up Today</a>
+                    </div>
+                </section>
+
+            </div> <!-- End .content-wrapper -->
+        </main>
+
+        <!-- Site Footer (Standard + Social from index.html) -->
+        <footer class="site-footer mt-auto">
+            <div class="container">
+                 <div class="social-media mb-4">
+                    <a href="https://www.facebook.com/profile.php?id=100084779703710" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/linfordlee14/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:linfordlee14@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/linfordlee14" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="copyright">
+                    <!-- Standard copyright with dynamic year -->
+                    © <span id="current-year"></span> Robin's Children's Choir. Inspiring young voices. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button (Standard) -->
+        <button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </button>
+    </div> <!-- End .app-container -->
+
+    <!-- Global Scripts -->
+    <!-- Relies on the global script.js for all functionality -->
+    <script src="script.js" defer></script>
+</body>
+</html>

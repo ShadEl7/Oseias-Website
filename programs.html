@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin's Children's Choir - Our Programs</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect/Preload hints (Optional but can improve performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Note: Google Font import is handled within styles.css now -->
+</head>
+<body>
+    <!-- App Container for Flex Layout -->
+    <div class="app-container">
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3"> <!-- Use Bootstrap container classes -->
+                 <a href="index.html" class="brand">
+                     <img src="robin.png" alt="Robin's Children's Choir Logo" style="height: 40px;">
+                     <span>Robin's Children's Choir</span>
+                </a>
+                <!-- Menu Toggle Button -->
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebarNav">
+            <ul class="nav-links">
+                 <!-- Active class will be handled by script.js -->
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="about.html" class="nav-link">About</a></li>
+                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                 <li><a href="support.html" class="nav-link">Support Us</a></li>
+                 <li><a href="news&events.html" class="nav-link">News & Events</a></li>
+                 <li><a href="programs.html" class="nav-link">Programs</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Theme Switch in Sidebar -->
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <!-- Icons using Emoji -->
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+            <div class="content-wrapper container-xl"> <!-- Bootstrap container for content width -->
+
+                <!-- Page Header Card -->
+                <section class="page-header-card">
+                    <h1 class="page-title">Our Programs</h1>
+                    <p class="intro-text">
+                        Robin's Children's Choir offers a variety of programs to nurture young voices and foster a love for music in children of all ages.
+                    </p>
+                </section>
+
+                <!-- Programs Section -->
+                <section class="page-section services-section">
+                    <div class="section-heading">
+                        <h2>Our Core Programs</h2>
+                        <p>Explore our range of programs designed to inspire and develop the musical talents of children.</p>
+                    </div>
+
+                    <!-- Bootstrap Grid for Programs -->
+                    <div class="row g-xl-4 g-lg-4 g-md-4 g-4 justify-content-center">
+                        <!-- Program Card 1: Beginner Choir -->
+                        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-4.905-6-10-4.878 5.095-6 8.345-6 10a6 6 0 0 0 6 6zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                                <h3>Beginner Choir</h3>
+                                <p>Perfect for young children just starting their musical journey. Learn the basics of singing and rhythm in a fun, supportive environment.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Introduction to Music</li>
+                                    <li>Basic Vocal Techniques</li>
+                                    <li>Fun Group Activities</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Program Card 2: Advanced Choir -->
+                        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+                                </svg>
+                                <h3>Advanced Choir</h3>
+                                <p>For experienced young singers looking to refine their skills. Focus on advanced vocal techniques and performance preparation.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Advanced Vocal Training</li>
+                                    <li>Performance Opportunities</li>
+                                    <li>Music Theory</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Program Card 3: Summer Camp -->
+                        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-4.905-6-10-4.878 5.095-6 8.345-6 10a6 6 0 0 0 6 6zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                                <h3>Summer Camp</h3>
+                                <p>A week-long immersive experience filled with music, fun, and friendship. Perfect for children of all skill levels.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Workshops & Activities</li>
+                                    <li>Group Performances</li>
+                                    <li>Memorable Experiences</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Program Card 4: Private Lessons -->
+                        <div class="col-md-6 col-lg-6 d-flex align-items-stretch">
+                            <div class="service-card w-100">
+                                <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-4.905-6-10-4.878 5.095-6 8.345-6 10a6 6 0 0 0 6 6zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                                <h3>Private Lessons</h3>
+                                <p>One-on-one coaching tailored to your child's unique needs. Focus on individual growth and skill development.</p>
+                                <ul class="service-benefits mt-auto">
+                                    <li>Personalized Training</li>
+                                    <li>Flexible Scheduling</li>
+                                    <li>Goal-Oriented Approach</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Auditions Section -->
+                <section class="page-section auditions-section">
+                    <div class="section-heading">
+                        <h2>Auditions</h2>
+                        <p>Showcase your singing skills and join Robin's Children's Choir! Sign up for an audition today.</p>
+                    </div>
+                    <div class="auditions-content">
+                        <p>We welcome children of all skill levels to audition for our choir. Auditions are a great way to assess your child's vocal abilities and find the best program for them.</p>
+                        <ul>
+                            <li>Auditions are held every Saturday from 10:00 AM to 2:00 PM.</li>
+                            <li>Location: Robin's Children's Choir Studio, 123 Music Lane, Harmony City.</li>
+                            <li>Prepare a short song to perform during the audition.</li>
+                        </ul>
+                        <a href="audition-signup.html" class="cta-btn">Sign Up for an Audition</a>
+                    </div>
+                </section>
+
+                <!-- Testimonials Section -->
+                <section class="page-section testimonials-section">
+                     <div class="section-heading">
+                        <h2>What Parents and Students Say</h2>
+                        <p>Hear from the families and children who have experienced the joy of Robin's Children's Choir.</p>
+                    </div>
+                     <!-- Bootstrap Grid for Testimonials -->
+                     <div class="row g-lg-4 g-md-4 g-4 justify-content-center">
+                         <!-- Testimonial Card 1 -->
+                         <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
+                             <div class="testimonial-card w-100">
+                                 <!-- SVG Icon: Quote -->
+                                 <svg class="testimonial-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="32" height="32">
+                                   <path d="M12 12.766c1.645 0 3-1.34 3-3.002 0-1.174-.614-2.17-1.592-2.668.37-.37.637-.87.754-1.415.118-.545.08-1.148-.11-1.688-.19-.54-.556-1.01-1.046-1.358-.49-.348-1.08-.516-1.708-.516-.74 0-1.39.204-1.91.608-.52.403-.848 1.007-.918 1.747-.07.74.17 1.43.61 1.95.44.52 1.05.82 1.75.82.02 0 .04 0 .06-.002-.018.298-.044.59-.078.87-.123.994-.39 1.874-.774 2.638-.068.133-.107.28-.107.428 0 .346.28.626.626.626h1.387zm-8 0c1.645 0 3-1.34 3-3.002 0-1.174-.614-2.17-1.592-2.668.37-.37.637-.87.754-1.415.118-.545.08-1.148-.11-1.688-.19-.54-.556-1.01-1.046-1.358-.49-.348-1.08-.516-1.708-.516-.74 0-1.39.204-1.91.608-.52.403-.848 1.007-.918 1.747-.07.74.17 1.43.61 1.95.44.52 1.05.82 1.75.82.02 0 .04 0 .06-.002-.018.298-.044.59-.078.87-.123.994-.39 1.874-.774 2.638-.068.133-.107.28-.107.428 0 .346.28.626.626.626h1.387z"/>
+                                </svg>
+                                <blockquote>
+                                    <p>"Joining Robin's Children's Choir has been the best decision for our child. They've grown so much in confidence and skill!"</p>
+                                    <footer>Parent of a Choir Member</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                         <!-- Testimonial Card 2 -->
+                         <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
+                             <div class="testimonial-card w-100">
+                                  <!-- SVG Icon: Quote -->
+                                 <svg class="testimonial-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="32" height="32">
+                                     <path d="M12 12.766c1.645 0 3-1.34 3-3.002 0-1.174-.614-2.17-1.592-2.668.37-.37.637-.87.754-1.415.118-.545.08-1.148-.11-1.688-.19-.54-.556-1.01-1.046-1.358-.49-.348-1.08-.516-1.708-.516-.74 0-1.39.204-1.91.608-.52.403-.848 1.007-.918 1.747-.07.74.17 1.43.61 1.95.44.52 1.05.82 1.75.82.02 0 .04 0 .06-.002-.018.298-.044.59-.078.87-.123.994-.39 1.874-.774 2.638-.068.133-.107.28-.107.428 0 .346.28.626.626.626h1.387z"/>
+                                </svg>
+                                <blockquote>
+                                    <p>"The summer camp was an unforgettable experience. My child made friends and discovered a love for music!"</p>
+                                    <footer>Happy Parent</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Call to Action Section -->
+                <section class="page-section cta-section-wrapper">
+                     <div class="cta-section">
+                        <h3>Ready to Join the Choir?</h3>
+                        <p>Contact us today to learn more about our programs and how your child can become part of Robin's Children's Choir.</p>
+                        <a href="contact.html" class="cta-btn">Get in Touch</a>
+                    </div>
+                </section>
+
+            </div> <!-- End .content-wrapper -->
+        </main>
+
+        <!-- Site Footer -->
+        <footer class="site-footer mt-auto"> <!-- mt-auto pushes footer down -->
+            <div class="container"> <!-- Bootstrap container for footer content -->
+                <div class="copyright">
+                    © <span id="current-year"></span> Robin's Children's Choir. Inspiring young voices, one note at a time.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+<button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+    </svg>
+</button>
+    </div> <!-- End .app-container -->
+
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

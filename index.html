@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin's Children's Choir - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect/Preload hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="app-container">
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3">
+                 <a href="index.html" class="brand">
+                     <img src="robin.png" alt="Robin's Children's Choir Logo" style="height: 40px;">
+                    <span>Robin's Children's Choir</span>
+                </a>
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebarNav">
+             <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="about.html" class="nav-link">About</a></li>
+                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                 <li><a href="support.html" class="nav-link">Support Us</a></li>
+                 <li><a href="news&events.html" class="nav-link">News & Events</a></li>
+                 <li><a href="programs.html" class="nav-link">Programs</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                 <li><a href="jobs.html" class="nav-link">Job Openings</a></li>
+            </ul>
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
+        </nav>
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+
+            <!-- Hero Section -->
+            <section class="hero-section hero-parallax-bg">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title mb-3">Robin's Children's Choir</h1>
+                    <p class="hero-subtitle mb-4">Transforming lives through Music</p>
+                    <!-- Removed the "Join the Choir" button -->
+                </div>
+            </section>
+
+            <!-- Content Wrapper -->
+            <div class="content-wrapper container-xl">
+
+                <!-- Mission Section -->
+                <section class="page-section mission-section">
+                    <div class="section-heading">
+                        <h2>Our Mission</h2>
+                    </div>
+                     <div class="page-header-card text-center">
+                         <p class="intro-text mb-0">
+                            To inspire and nurture a love for music in children, fostering creativity, teamwork, and confidence through the joy of singing.
+                         </p>
+                    </div>
+                </section>
+
+                <!-- Why Choose Us Section -->
+                <section class="page-section why-choose-us-section">
+                    <div class="section-heading">
+                        <h2>Why Join Us?</h2>
+                        <p>Discover the benefits of being part of Robin's Children's Choir.</p>
+                    </div>
+                    <div class="row g-xl-4 g-lg-4 g-md-4 g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                <i class="fa-solid fa-music feature-icon"></i>
+                                <h3>Musical Growth</h3>
+                                <p>Learn and grow under the guidance of experienced music directors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                 <i class="fa-solid fa-users feature-icon"></i>
+                                <h3>Community</h3>
+                                <p>Be part of a supportive and inclusive group of young singers.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <div class="feature-card">
+                                 <i class="fa-solid fa-star feature-icon"></i>
+                                <h3>Performance Opportunities</h3>
+                                <p>Showcase your talent at concerts, events, and competitions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Events CTA Section -->
+                <section class="page-section portfolio-cta-section">
+                    <div class="cta-section text-center border rounded-3 shadow-sm p-lg-5 p-4" style="background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.05), rgba(var(--primary-rgb), 0.02));">
+                        <i class="fa-solid fa-calendar-alt fa-3x mb-3 text-primary"></i>
+                        <h3 class="mb-3">Upcoming Events</h3>
+                        <p class="lead text-secondary mb-4 mx-auto" style="max-width: 650px;">
+                            Join us at our upcoming performances and events to experience the magic of Robin's Children's Choir.
+                        </p>
+                        <a href="news&events.html" class="btn btn-lg btn-outline-primary rounded-pill px-4 fw-bold">
+                            View Events <i class="fa-solid fa-arrow-right ms-2 fa-sm"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Join Us CTA Section -->
+                <section class="page-section cta-section-wrapper">
+                    <div class="cta-section">
+                        <h3>Ready to Sing with Us?</h3>
+                        <p>Become a part of Robin's Children's Choir and let your voice shine. Sign up today!</p>
+                        <a href="audition-signup.html" class="cta-btn">
+                            Join Now
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Site Footer -->
+        <footer class="site-footer mt-auto">
+            <div class="container">
+                <!-- Newsletter Section -->
+                <div class="newsletter-section mb-4">
+                    <h3 class="text-center">Subscribe to Our Newsletter</h3>
+                    <p class="text-center text-secondary">Stay updated with the latest news and events from Robin's Children's Choir.</p>
+                    <form class="newsletter-form d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="social-media mb-4">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:info@robinschoir.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="copyright">
+                    © <span id="current-year"></span> Robin's Children's Choir. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Global Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>

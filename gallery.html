@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title -->
+    <title>Robin's Children's Choir - Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS (Using v6.5.1 like index.html) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect/Preload hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="app-container">
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header (Updated Branding) -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3">
+                 <a href="index.html" class="brand">
+                     <img src="robin.png" alt="Robin's Children's Choir Logo" style="height: 40px;">
+                     <span>Robin's Choir</span>
+                </a>
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation (Updated Links) -->
+        <nav class="sidebar" id="sidebarNav">
+             <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="about.html" class="nav-link">About</a></li>
+                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                 <li><a href="support.html" class="nav-link">Support Us</a></li>
+                 <li><a href="news&events.html" class="nav-link">News & Events</a></li>
+                 <li><a href="programs.html" class="nav-link">Programs</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar Overlay (Standard) -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+            <!-- Standard Content Wrapper -->
+            <div class="content-wrapper container-xl">
+
+                <!-- Gallery Section -->
+                <section class="page-section gallery-section">
+                    <div class="section-heading">
+                        <h2>Gallery</h2>
+                        <p>Explore moments from Robin's Children's Choir performances and events.</p>
+                    </div>
+                    <!-- Using Bootstrap Grid for Gallery -->
+                    <div class="row g-4">
+                        <!-- Gallery Item 1 -->
+                        <div class="col-md-4">
+                            <div class="gallery-item equal-item">
+                                <a href="images/performance1.jpg" target="_blank">
+                                    <img src="images/performance1.jpg" alt="Choir Performance 1" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;">
+                                </a>
+                                <p class="mt-2 text-center">Performance at City Hall</p>
+                            </div>
+                        </div>
+                        <!-- Gallery Item 2 -->
+                        <div class="col-md-4">
+                            <div class="gallery-item equal-item">
+                                <a href="images/performance2.jpg" target="_blank">
+                                    <img src="images/performance2.jpg" alt="Choir Performance 2" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;">
+                                </a>
+                                <p class="mt-2 text-center">Community Outreach Event</p>
+                            </div>
+                        </div>
+                        <!-- Gallery Item 3 -->
+                        <div class="col-md-4">
+                            <div class="gallery-item equal-item">
+                                <a href="images/performance3.jpg" target="_blank">
+                                    <img src="images/performance3.jpg" alt="Choir Performance 3" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;">
+                                </a>
+                                <p class="mt-2 text-center">Annual Choir Festival</p>
+                            </div>
+                        </div>
+                        <!-- Gallery Item 4 -->
+                        <div class="col-md-4">
+                            <div class="gallery-item equal-item">
+                                <a href="images/performance4.jpg" target="_blank">
+                                    <img src="images/performance4.jpg" alt="Choir Performance 4" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;">
+                                </a>
+                                <p class="mt-2 text-center">Holiday Concert</p>
+                            </div>
+                        </div>
+                        <!-- Gallery Item 5 -->
+                        <div class="col-md-4">
+                            <div class="gallery-item equal-item">
+                                <a href="images/performance5.jpg" target="_blank">
+                                    <img src="images/performance5.jpg" alt="Choir Performance 5" class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;">
+                                </a>
+                                <p class="mt-2 text-center">Fundraising Gala</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Videos Section -->
+                <section class="page-section videos-section">
+                    <div class="section-heading">
+                        <h2>Videos</h2>
+                        <p>Watch highlights from Robin's Children's Choir performances and events.</p>
+                    </div>
+                    <!-- Using Bootstrap Grid for Videos -->
+                    <div class="row g-4">
+                        <!-- Video Item 1 -->
+                        <div class="col-md-4">
+                            <div class="gallery-item equal-item">
+                                <a href="videos/performance1.mp4" target="_blank">
+                                    <video controls class="img-fluid rounded shadow-sm">
+                                        <source src="videos/performance1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                                <p class="mt-2 text-center">Choir Singing at Park</p>
+                            </div>
+                        </div>
+                        <!-- Video Item 2 -->
+                        <div class="col-md-4">
+                            <div class="gallery-item equal-item">
+                                <a href="videos/performance2.mp4" target="_blank">
+                                    <video controls class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;">
+                                        <source src="videos/performance2.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                                <p class="mt-2 text-center">Rehearsal Highlights</p>
+                            </div>
+                        </div>
+                        <!-- Video Item 3 -->
+                        <div class="col-md-4">
+                            <div class="gallery-item equal-item">
+                                <a href="videos/performance3.mp4" target="_blank">
+                                    <video controls class="img-fluid rounded shadow-sm" style="aspect-ratio: 16/9; object-fit: cover;">
+                                        <source src="videos/performance3.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                                <p class="mt-2 text-center">Spring Concert Highlights</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div> <!-- End .content-wrapper -->
+        </main>
+
+        <!-- Modal for Viewing Items -->
+        <div class="modal fade" id="itemModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body text-center">
+                        <img id="modalImage" src="" alt="" class="img-fluid d-none">
+                        <video id="modalVideo" controls class="img-fluid d-none">
+                            <source id="modalVideoSource" src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Site Footer -->
+        <footer class="site-footer mt-auto">
+            <div class="container">
+                 <div class="social-media mb-4">
+                    <a href="https://www.facebook.com/robinschoir" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/robinschoir/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:robinschoir@gmail.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/robinschoir" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="copyright">
+                    © <span id="current-year"></span> Robin's Children's Choir. Inspiring through music. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button (Standard) -->
+        <!-- The button itself is standard, JS handles the logic -->
+        <button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </button>
+    </div> <!-- End .app-container -->
+
+    <!-- Global Scripts -->
+    <!-- Removed inline script, relying on global script.js -->
+    <script src="script.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = new bootstrap.Modal(document.getElementById('itemModal'));
+            const modalImage = document.getElementById('modalImage');
+            const modalVideo = document.getElementById('modalVideo');
+            const modalVideoSource = document.getElementById('modalVideoSource');
+
+            document.querySelectorAll('.gallery-item a').forEach(link => {
+                link.addEventListener('click', event => {
+                    event.preventDefault();
+                    const href = link.getAttribute('href');
+                    if (href.endsWith('.mp4')) {
+                        modalImage.classList.add('d-none');
+                        modalVideoSource.src = href;
+                        modalVideo.load();
+                        modalVideo.classList.remove('d-none');
+                    } else {
+                        modalVideo.classList.add('d-none');
+                        modalImage.src = href;
+                        modalImage.classList.remove('d-none');
+                    }
+                    modal.show();
+                });
+            });
+
+            // Reset modal content when closed
+            document.getElementById('itemModal').addEventListener('hidden.bs.modal', () => {
+                modalImage.src = '';
+                modalVideoSource.src = '';
+                modalVideo.load();
+            });
+        });
+    </script>
+</body>
+</html>

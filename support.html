@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin's Children's Choir - Support Us</title> <!-- Updated Title -->
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect/Preload hints (Optional but can improve performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Note: Google Font import is handled within styles.css -->
+</head>
+<body>
+    <!-- App Container for Flex Layout -->
+    <div class="app-container">
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3"> <!-- Use Bootstrap container classes -->
+                 <a href="index.html" class="brand">
+                     <img src="robin.png" alt="Robin's Children's Choir Logo" style="height: 40px;">
+                     <span>Robin's Choir</span> <!-- Updated Brand Name -->
+                </a>
+                <!-- Menu Toggle Button -->
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebarNav">
+            <ul class="nav-links">
+                 <!-- Active class will be handled by script.js -->
+                 <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="about.html" class="nav-link">About</a></li>
+                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                 <li><a href="support.html" class="nav-link">Support Us</a></li>
+                 <li><a href="news&events.html" class="nav-link">News & Events</a></li>
+                 <li><a href="programs.html" class="nav-link">Programs</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Theme Switch in Sidebar -->
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <!-- Icons using Emoji -->
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+            <div class="content-wrapper container-xl"> <!-- Bootstrap container for content width -->
+
+                <!-- Page Header Card -->
+                <section class="page-header-card">
+                    <h1 class="page-title">Support Us</h1>
+                    <p class="intro-text">
+                        Robin's Children's Choir relies on the generosity of supporters like you to bring the joy of music to children and communities. Explore the ways you can contribute to our mission.
+                    </p>
+                </section>
+
+                <!-- Support Options Section -->
+                <section class="page-section support-section">
+                    <div class="row g-xl-4 g-lg-4 g-md-4 g-4 justify-content-center">
+
+                        <!-- Support Option 1: One-Time Donation -->
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="support-card w-100">
+                                <svg class="support-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zm3.5 8.5a.5.5 0 0 1-.5.5H9v2.5a.5.5 0 0 1-1 0V9H5.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0V8h2.5a.5.5 0 0 1 .5.5z"/>
+                                </svg>
+                                <h3>One-Time Donation</h3>
+                                <p>Make a one-time contribution to help fund our programs, events, and resources for the choir.</p>
+                                <ul class="support-benefits mt-auto">
+                                    <li>Support music education</li>
+                                    <li>Fund community performances</li>
+                                    <li>Provide instruments and materials</li>
+                                    <li><strong>Donate any amount</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Support Option 2: Monthly Sponsorship -->
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="support-card w-100">
+                                <svg class="support-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zm3.5 8.5a.5.5 0 0 1-.5.5H9v2.5a.5.5 0 0 1-1 0V9H5.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0V8h2.5a.5.5 0 0 1 .5.5z"/>
+                                </svg>
+                                <h3>Monthly Sponsorship</h3>
+                                <p>Become a sponsor and provide ongoing support to ensure the choir's sustainability and growth.</p>
+                                <ul class="support-benefits mt-auto">
+                                    <li>Exclusive updates and newsletters</li>
+                                    <li>Recognition on our website</li>
+                                    <li>Invitation to special events</li>
+                                    <li><strong>From $25/month</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Support Option 3: Volunteer Opportunities -->
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="support-card w-100">
+                                <svg class="support-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" width="48" height="48">
+                                    <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0zm3.5 8.5a.5.5 0 0 1-.5.5H9v2.5a.5.5 0 0 1-1 0V9H5.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0V8h2.5a.5.5 0 0 1 .5.5z"/>
+                                </svg>
+                                <h3>Volunteer Opportunities</h3>
+                                <p>Join our team of dedicated volunteers and help us bring music to life for children and communities.</p>
+                                <ul class="support-benefits mt-auto">
+                                    <li>Assist at events and performances</li>
+                                    <li>Help with fundraising efforts</li>
+                                    <li>Share your skills and expertise</li>
+                                    <li><strong>Make a difference today</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div> <!-- End .row -->
+                </section>
+
+                <!-- Call to Action Section -->
+                <section class="page-section cta-section-wrapper">
+                    <div class="cta-section">
+                        <h3>Every Contribution Counts</h3>
+                        <p>Your support helps us nurture young talent and spread the joy of music. Together, we can make a lasting impact.</p>
+                        <a href="contribution.html" class="cta-btn">Get Involved</a>
+                    </div>
+                </section>
+
+            </div> <!-- End .content-wrapper -->
+        </main>
+
+        <!-- Site Footer -->
+        <footer class="site-footer mt-auto"> <!-- mt-auto pushes footer down -->
+            <div class="container"> <!-- Bootstrap container for footer content -->
+                <div class="copyright">
+                    <!-- Updated Copyright Year -->
+                    © <span id="current-year"></span> Robin's Children's Choir. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </button>
+    </div> <!-- End .app-container -->
+
+    <!-- Link to External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

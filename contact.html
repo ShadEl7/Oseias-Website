@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Robin's Children's Choir</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS (Required for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Preconnect/Preload hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Specific styles for this page (if any minor tweaks are needed, but try to keep in styles.css) -->
+    <!--
+    <style>
+        /* Example: Adjust submit button margin if needed */
+        /* .contact-form .submit-button { margin-top: 1rem; } */
+    </style>
+    -->
+</head>
+<body>
+    <!-- App Container for Flex Layout -->
+    <div class="app-container">
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator"></div>
+
+        <!-- Site Header (Standard - Copied from index.html) -->
+        <header class="site-header">
+            <div class="header-container container-fluid px-lg-5 px-3">
+                 <a href="index.html" class="brand">
+                     <img src="robin.png" alt="Robin's Children's Choir Logo" style="height: 40px;">
+                    <span>Robin's Choir</span>
+                </a>
+                 <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="sidebarNav">
+                    <span class="icon-line line-1"></span>
+                    <span class="icon-line line-2"></span>
+                    <span class="icon-line line-3"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar Navigation (Standard - Copied from index.html) -->
+        <nav class="sidebar" id="sidebarNav">
+             <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                 <li><a href="about.html" class="nav-link">About</a></li>
+                 <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                 <li><a href="support.html" class="nav-link">Support Us</a></li>
+                 <li><a href="news&events.html" class="nav-link">News & Events</a></li>
+                 <li><a href="programs.html" class="nav-link">Programs</a></li>
+                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul> <!-- Active link handled by script.js -->
+            </ul>
+            <div class="theme-switch-container">
+                <span class="theme-switch-label">Appearance</span>
+                 <div class="theme-switch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle dark mode">
+                    <span class="icon" aria-hidden="true">☀️</span>
+                    <span class="icon" aria-hidden="true">🌙</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar Overlay (Standard - Copied from index.html) -->
+        <div class="sidebar-overlay"></div>
+
+        <!-- Main Content Area -->
+        <main class="main-container flex-grow-1">
+            <div class="content-wrapper container-xl"> <!-- Bootstrap container for content width -->
+
+                <!-- Page Header Card -->
+                <section class="page-header-card">
+                    <h1 class="page-title">Contact Us</h1>
+                    <p class="intro-text">
+                        Interested in joining our choir or have questions? Reach out to us using the form below or contact us directly. We'd love to hear from you!
+                    </p>
+                </section>
+
+                <!-- Contact Form Section -->
+                <section class="page-section contact-form-section">
+                    <!-- Optional: Wrap form in a card for visual separation -->
+                    <div class="card p-4 p-md-5 shadow-sm border-0">
+                        <h2 class="text-center mb-4">Send Us a Message</h2>
+                        <!-- Add Bootstrap validation classes if desired -->
+                        <form action="submit_form.php" method="post" class="contact-form needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message:</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message, inquiry, or project details here..." required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                             <!-- Use Bootstrap button classes, potentially reusing cta-btn styling if desired, or standard btn -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg px-5 cta-btn">Send Message</button>
+                            </div>
+                            <!-- Success message placeholder -->
+                            <div class="mt-3 text-center" id="form-success-message" style="display: none;">
+                                <p class="text-success">Thank you for your message! We will get back to you soon.</p>
+                            </div>
+                        </form>
+                    </div> <!-- End Card -->
+                </section>
+
+                <!-- Contact Details Section -->
+                <section class="page-section contact-details-section">
+                    <div class="text-center"> <!-- Center aligning the content -->
+                        <h2 class="mb-3">Direct Contact Details</h2>
+                         <p class="lead mb-2">
+                            <i class="fas fa-envelope me-2 text-primary" aria-hidden="true"></i>Email:
+                            <a href="mailto:robinchoir@example.com" class="text-decoration-none">robinchoir@example.com</a>
+                        </p>
+                        <p class="lead mb-2">
+                            <i class="fas fa-phone me-2 text-primary" aria-hidden="true"></i>Phone:
+                            <a href="tel:+1234567890" class="text-decoration-none">+1 234 567 890</a>
+                        </p>
+                        <p class="lead mb-0">
+                           <i class="fas fa-map-marker-alt me-2 text-primary" aria-hidden="true"></i>Address:
+                           123 Harmony Lane, Melody City, USA
+                        </p>
+                        <!-- Consider adding a Google Maps embed here if desired -->
+                    </div>
+                </section>
+
+            </div> <!-- End .content-wrapper -->
+        </main>
+
+        <!-- Site Footer (Standard + Social - Copied from index.html) -->
+        <footer class="site-footer mt-auto">
+            <div class="container">
+                 <div class="social-media mb-4">
+                    <a href="https://www.facebook.com/robinschoir" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/robinschoir" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:robinchoir@example.com" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/robinschoir" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="copyright">
+                    © <span id="current-year"></span> Robin's Children's Choir. Inspiring young voices through music. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button (Standard - Copied from index.html) -->
+        <button class="back-to-top" aria-label="Back to Top" title="Back to Top">
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </button>
+
+    </div> <!-- End .app-container -->
+
+    <!-- Global Scripts -->
+    <script src="script.js" defer></script>
+     <!-- Optional: Add Bootstrap JS bundle if using components that require it (like dropdowns, tooltips, validation feedback), though not strictly needed for this form structure -->
+     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+     <!-- Optional: Basic Bootstrap Form Validation Script (if needed) -->
+     <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+          'use strict'
+
+          const forms = document.querySelectorAll('.needs-validation')
+          const successMessage = document.getElementById('form-success-message')
+
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              } else {
+                // Simulate form submission success
+                event.preventDefault() // Remove this line when integrating with a backend
+                successMessage.style.display = 'block'
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+     </script>
+
+</body>
+</html>
